@@ -4,13 +4,20 @@ body {
     background-color: #3c1083;
     font-family: 'Mochiy Pop One', sans-serif;
     text-align: center;
-    
-    margin: o;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    
+    /* margin: o; */
+    display: flex;
     height: 100vh;
     justify-content: center;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    line-height: 75px;
+    text-align: upper-center;
 }
 
 h1 {
@@ -18,5 +25,50 @@ h1 {
     letter-spacing: 5px;
     color: #e9a82e;
     text-shadow: 2px 2px 4px rgba(13, 8, 43, 0.616);
-    /* white-space: nowrap; */
+}
+
+.frame {
+    padding: 20px;
+    border-radius: 5px;
+    background-image: url(/assets/images/drumkit.jpg);
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    width: 65%;
+    height: 500px;
+    justify-content: center;
+    border-color:rgba(224, 138, 25, 0.986);
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 2px 4px 8px rgba(13, 8, 43, 0.616);
+}
+
+.container {
+    text-align: center;
+}
+
+.btn {
+    padding: 30px 50px;
+    background-color: #be7f0acb;
+    border-color:rgba(27, 9, 129, 0.733);
+    border-radius: 10px;
+    margin: 10px;
+    min-width: 150px;
+    font-size: 15px;
+    box-shadow: 0px 4px 8px rgba(13, 8, 43, 0.616);
+    color: #250d68;
+    font-family:'Mochiy Pop One', sans-serif ;
+    text-shadow: 1px 1px 2px rgba(13, 8, 43, 0.616);
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: rgb(252, 248, 58);
+    padding: 31px 51px;
+    transition: all 0.2s ease-in-out;
+}
+.btn:active {
+    font-size: 17px;
+    padding: 35px 55px;
 }
