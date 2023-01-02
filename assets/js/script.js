@@ -14,6 +14,6 @@ kits.forEach((kit) => {
         audioEl.play();
     })
     window.addEventListener('keydown', (event)=>{
-        if(event.key = );
+        // if(event.key = );
     })
 });
