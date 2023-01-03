@@ -2,9 +2,9 @@ let kits = ['kick', 'snare', 'perc', 'hihat', 'crash'];
 let drumsEl = document.querySelector('.drums');
 
 kits.forEach((kit) => {
-    let btnEl = document.createElement('button');
-    btnEl.classList.add('btn');
-    btnEl.innerText = kit;
+    // let btnEl = document.createElement('button');
+    // btnEl.classList.add('btn');
+    // btnEl.innerText = kit;
 
     drumsEl.appendChild(btnEl);
     let audioEl = document.createElement('audio');
