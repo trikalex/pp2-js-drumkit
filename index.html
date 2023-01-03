@@ -17,14 +17,16 @@
 <body>
     <header class="title">
     <h1>Drumkit <i id="hammer" class="fa-solid fa-hammer"></i></h1>
-    <div class="kit-menu">
+    <div class="kit">
+        <label for="kitsel">kit select</label>
+        <br>
         <i class="fa-solid fa-circle-chevron-right"></i>
-        <select name="kit" id="kit-change">
-            <option selected disabled>kit select</option>
-            <option value="">kit1</option>
-            <option value="">kit2</option>
-            <option value="">kit3</option>
-            <option value="">kit4</option>
+        <select name="kit" id="kitsel">
+            <!-- <option selected disabled>kit select</option> -->
+            <option value="kit/kit1">kit1</option>
+            <option value="kit/kit2">kit2</option>
+            <option value="kit/kit3">kit3</option>
+            <option value="kit/kit4">kit4</option>
         </select>
         <i class="fa-solid fa-circle-chevron-left"></i>
     </div>
@@ -34,13 +36,39 @@
 
         <div class="drums">
 
+            <button class="btn">
+                <i class="fa-solid fa-circle"></i>
+                <br>
+                kick
+            </button>
+            <button class="btn">
+                <i class="fa-regular fa-circle"></i>
+                <br>
+                snare
+            </button>
+            <button class="btn">
+                <i class="fa-solid fa-circle-half-stroke"></i>
+                <br>
+                perc
+            </button>
+            <button class="btn">
+                <i class="fa-regular fa-circle-dot"></i>
+                <br>
+                hihat
+            </button>
+            <button class="btn">
+                <i class="fa-solid fa-circle-dot"></i>
+                <br>
+                crash
+            </button>
+
         </div>
 
     </div>
 
 
     <!-- JS link -->
-    <script src="assets/js/script.js"></script>
+    <script src="assets/js/script1.js"></script>
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/05fc023ef5.js" crossorigin="anonymous"></script>
 </body>
