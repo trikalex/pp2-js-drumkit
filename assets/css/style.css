@@ -32,7 +32,7 @@ h1 :hover {
     transition: all 0.3s ease-in-out;
 }
 
-.kit-menu {
+.kit {
     background-color: #3f1286ea;
     border-color:rgba(27, 9, 129, 0.733);
     border-radius: 10px;
@@ -40,15 +40,14 @@ h1 :hover {
     font-size: 20px;
     color: #e9a82e;
     box-shadow: 0px 4px 8px rgba(13, 8, 43, 0.616);
-    color: #250d68;
 }
 
-.kit-menu:hover {
+.kit:hover {
     color: rgb(178, 252, 41);
     transition: all 0.3s ease-in-out;
 }
 
-#kit-change {
+#kitsel {
     padding: 15px 2px;
     font-size: 14px;
     color: #250d68;
@@ -61,7 +60,7 @@ h1 :hover {
     cursor: pointer;
 }
 
-#kit-change:hover {
+#kitsel:hover {
     color: rgb(178, 252, 41);
     padding: 18px 18px;
     transition: all 0.2s ease-in-out;
