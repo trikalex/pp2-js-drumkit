@@ -1,50 +1,53 @@
-let kits = ['kick', 'snare', 'perc', 'hihat', 'crash'];
+// let kits = document.getElementById('kitsel');
+
+// let drumsEl = document.querySelector('.drums');
 let btnEl = document.getElementsByClassName('btn');
-let drumsEl = document.querySelector('.drums');
 
 
-kits.forEach((kit) => {
+
+function addAudioToButtons() {
     let audioEl = document.createElement('audio');
-    btnEl.appendChild(audioEl);
-})
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const drumsEl = document.querySelector('.drums');
-// const btnEl = document.getElementsByClassName('btn');
-
-
-
-// kits.forEach((kit) => {
-    // let btnEl = document.createElement('button');
-    // btnEl.classList.add('btn');
-    // btnEl.innerText = kit;
-
-    // drumsEl.appendChild(btnEl);
-//     let audioEl = document.createElement('audio');
-//     audioEl.src = 'assets/audio/kit1/' + kit + '1.wav';
-//     drumsEl.appendChild(audioEl);
+    document.getElementsByClassName('drums').appendChild(audioEl);
     
-//     btnEl.addEventListener('click', ()=>{
-//         audioEl.play();
-//     })
-//     window.addEventListener('keydown', (event)=>{
-//         if (event.key === kit.slice(0, 1)) {
-//             audioEl.play();
-//             btnEl.style.transform ='scale(.9)';
-//             setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
-//         };
-//     });
-// });
+}
+    
+
+let kitSelect = document.querySelectorAll('select[id="kitsel"]');
+kitSelect.forEach(select => {
+    select.addEventListener('change', changeDrumKit);
+});
+
+function changeDrumKit(e) {
+    
+    let opt = e.target.selectedOptions.value;
+
+    if (opt.includes('kit1')) {
+        audioEl.src = 'assets/audio/kit1/' + kit + '1.wav';
+    }
+    else if (opt.includes('kit2')) {
+        audioEl.src = 'assets/audio/kit1/' + kit + '2.wav';
+    }
+    else if (opt.includes('kit3')) {
+        audioEl.src = 'assets/audio/kit1/' + kit + '3.wav';
+    }
+    else if (opt.includes('kit4')) {
+        audioEl.src = 'assets/audio/kit1/' + kit + '4.wav';
+    }
+
+    btnEl.addEventListener('click', ()=>{
+        audioEl.play();
+    });
+
+
+//     // window.addEventListener('keydown', (event)=>{
+//     //     if (event.key === ) {
+//     //         audioEl.play();
+//     //         btnEl.style.transform ='scale(.9)';
+//     //         setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
+//     //     };
+//     // });
+
+};
+
+// console.log(drumsEl);
+// console.log(audioEl);
