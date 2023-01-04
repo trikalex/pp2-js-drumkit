@@ -1,16 +1,8 @@
-// let kits = document.getElementById('kitsel');
+let kits = ['kick', 'snare', 'perc', 'hihat', 'crash'];
 
 // let drumsEl = document.querySelector('.drums');
 let btnEl = document.getElementsByClassName('btn');
 
-
-
-function addAudioToButtons() {
-    let audioEl = document.createElement('audio');
-    document.getElementsByClassName('drums').appendChild(audioEl);
-    
-}
-    
 
 let kitSelect = document.querySelectorAll('select[id="kitsel"]');
 kitSelect.forEach(select => {
@@ -18,25 +10,26 @@ kitSelect.forEach(select => {
 });
 
 function changeDrumKit(e) {
-    
-    let opt = e.target.selectedOptions.value;
-
+    let audioEl = document.createElement('audio');
+    let opt = e.target.selectedOptions[0].value;
+    console.log(opt);
     if (opt.includes('kit1')) {
-        audioEl.src = 'assets/audio/kit1/' + kit + '1.wav';
+        audioEl.src = 'assets/audio/kit1/' + kits + '1.wav';
     }
     else if (opt.includes('kit2')) {
-        audioEl.src = 'assets/audio/kit1/' + kit + '2.wav';
+        audioEl.src = 'assets/audio/kit2/' + kits + '2.wav';
     }
     else if (opt.includes('kit3')) {
-        audioEl.src = 'assets/audio/kit1/' + kit + '3.wav';
+        audioEl.src = 'assets/audio/kit3/' + kits + '3.wav';
     }
     else if (opt.includes('kit4')) {
-        audioEl.src = 'assets/audio/kit1/' + kit + '4.wav';
+        audioEl.src = 'assets/audio/kit4/' + kits + '4.wav';
     }
 
     btnEl.addEventListener('click', ()=>{
         audioEl.play();
     });
+
 
 
 //     // window.addEventListener('keydown', (event)=>{
@@ -49,5 +42,10 @@ function changeDrumKit(e) {
 
 };
 
-// console.log(drumsEl);
+function addAudioToButtons() {
+    document.getElementsByClassName('btn').appendChild(audioEl);
+    
+};
+
+console.log(btnEl);
 // console.log(audioEl);
