@@ -10,7 +10,7 @@ kitSelect.forEach(select => {
 });
 
 function changeDrumKit(e) {
-    let audioEl = document.createElement('audio');
+    // let audioEl = document.createElement('audio');
     let opt = e.target.selectedOptions[0].value;
     console.log(opt);
     if (opt.includes('kit1')) {
