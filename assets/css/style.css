@@ -3,7 +3,7 @@
 /* Body styling */
 
 body {
-    background-color: #3c1083;
+    background-color: #260d68;
     font-family: 'Mochiy Pop One', sans-serif;
     text-align: center;
     flex-direction: column;
@@ -42,8 +42,8 @@ h1 :hover {
 
 .kit {
     background-image: url(/assets/images/drumkit.jpg);
-    background-position: center center;
-    background-size: cover;
+    background-position: bottom;
+    /* background-size: cover; */
     /* background-color: #3e128696; */
     border-color:rgba(27, 9, 129, 0.733);
     border-radius: 10px;
