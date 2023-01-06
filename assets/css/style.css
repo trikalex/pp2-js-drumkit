@@ -41,12 +41,15 @@ h1 :hover {
 /* Drumkit select container */
 
 .kit {
-    background-color: #3f1286ea;
+    background-image: url(/assets/images/drumkit.jpg);
+    background-position: center center;
+    background-size: cover;
+    /* background-color: #3e128696; */
     border-color:rgba(27, 9, 129, 0.733);
     border-radius: 10px;
     margin: 10px;
     font-size: 20px;
-    color: #e9a82e;
+    color: #e9a932;
     box-shadow: 0px 4px 8px rgba(13, 8, 43, 0.616);
 }
 
@@ -128,4 +131,14 @@ h1 :hover {
     font-size: 17px;
     padding: 35px 55px;
     transition: all 0.2s ease-in-out;
+}
+
+/* Responsive design styling */
+
+@media (max-width: 563px) {
+    .btn {
+        padding: 20px 35px;
+        margin: 10px;
+        min-width: 100px;
+     }
 }
