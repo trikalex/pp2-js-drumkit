@@ -23,22 +23,22 @@
 
     <!-- Application Title -->
     <header class="title">
-    <h1>Drumkit <i id="hammer" class="fa-solid fa-hammer"></i></h1>
+        <h1>Drumkit <i id="hammer" class="fa-solid fa-hammer"></i></h1>
 
+    </header>
     <!-- Drum kits selector -->
     <div class="kit">
         <label for="kitsel">kit select</label>
         <br>
         <i class="fa-solid fa-circle-chevron-right"></i>
         <select name="kit" id="kitsel">
-            <option value="kit/kit1">kit1</option>
-            <option value="kit/kit2">kit2</option>
-            <option value="kit/kit3">kit3</option>
-            <option value="kit/kit4">kit4</option>
+            <option value="0" selected>kit1</option>
+            <option value="1">kit2</option>
+            <option value="2">kit3</option>
+            <option value="3">kit4</option>
         </select>
         <i class="fa-solid fa-circle-chevron-left"></i>
     </div>
-</header>
 
     <!-- Background image container -->
     <div class="frame">
@@ -47,27 +47,27 @@
         <div class="drums">
 
             <!-- Buttons/ drum pads -->
-            <button class="btn">
+            <button class="btn" data-key="5" data-sound="kick">
                 <i class="fa-solid fa-circle"></i>
                 <br>
                 kick
             </button>
-            <button class="btn">
+            <button class="btn" data-key="6" data-sound="snare">
                 <i class="fa-regular fa-circle"></i>
                 <br>
                 snare
             </button>
-            <button class="btn">
+            <button class="btn" data-key="7" data-sound="perc">
                 <i class="fa-solid fa-circle-half-stroke"></i>
                 <br>
                 perc
             </button>
-            <button class="btn">
+            <button class="btn" data-key="9" data-sound="hihat">
                 <i class="fa-regular fa-circle-dot"></i>
                 <br>
                 hihat
             </button>
-            <button class="btn">
+            <button class="btn" data-key="0" data-sound="crash">
                 <i class="fa-solid fa-circle-dot"></i>
                 <br>
                 crash
