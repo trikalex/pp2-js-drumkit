@@ -1,3 +1,5 @@
+/* jshint esversion: 11 */
+
 let audioPath =[
     {
         'kick': new Audio('assets/audio/kit1/kick1.wav'),
@@ -32,43 +34,37 @@ console.log(audioPath[0]);
 
 
 
-let kitSelect = document.querySelectorAll('select[id="kitsel"]');
-kitSelect.forEach(select => {
-    select.addEventListener('change', changeDrumKit);
-});
+let kitSelect = document.getElementById('kitsel');
+kitSelect.addEventListener('change', changeDrumKit);
+window.addEventListener('load', changeDrumKit);
+
+let opt, keySound;
+let audiokit = audioPath[0];
+let btns = document.querySelectorAll('.btn');
 
 function changeDrumKit(e) {
-    let opt = e.target.selectedOptions[0].value;
-    let btnEl = document.querySelectorAll('.btn');
-
-    if (opt.includes('kit1')) {
-        btnEl = audioPath[0];
-    }
-    else if (opt.includes('kit2')) {
-        btnEl = audioPath[1];
-    }
-    else if (opt.includes('kit3')) {
-        btnEl = audioPath[2];
-    }
-    else if (opt.includes('kit4')) {
-        btnEl = audioPath[3];
+    if (e.target.nodeName != "SELECT") {
+        opt = kitSelect.value;
+    } else {
+        opt = e.target.selectedOptions[0].value;
     }
 
-    btnEl.addEventListener('click', ()=>{
-        audioPath.play();
-    });
-
-    // window.addEventListener('keydown', function(e) {
-    //     let audio = this.document.querySelector()
-
-        // if (event.key === ) {
-        //     audioEl.play();
-        //     btnEl.style.transform ='scale(.9)';
-        //     setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
-        // };
-    // });
+    audiokit = audioPath[opt];
 }
 
+btns.forEach(btn => {
+    btn.addEventListener('click', ()=>{
+        keySound = btn.dataset.sound;
+        audiokit[keySound].currentTime = 0;
+        audiokit[keySound].play();
+    });
+});
 
-// 
-// console.log(opt);
+window.addEventListener('keydown', function(e) {
+    let button = this.document.querySelector(`button[data-key="${e.key}"]`)
+    if(!button) return; //stop fnction from running
+    console.log(button);
+    keySound = button.dataset.sound;
+    audiokit[keySound].currentTime = 0;
+    audiokit[keySound].play();
+});
