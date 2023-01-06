@@ -31,7 +31,7 @@ h1 {
     text-shadow: 2px 2px 4px rgba(13, 8, 43, 0.616);
 }
 
-h1 :hover {
+h1:hover {
     font-size: 52px;
     letter-spacing: 7px;
     color: rgb(178, 252, 41);
@@ -41,6 +41,7 @@ h1 :hover {
 /* Drumkit select container */
 
 .kit {
+    padding: 1em 3em;
     background-image: url(../images/drumkit.jpg);
     background-position: bottom;
     /* background-size: cover; */
