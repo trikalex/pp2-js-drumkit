@@ -30,9 +30,6 @@ let audioPath =[
         'crash': new Audio('assets/audio/kit4/crash4.wav'),
     },
 ];
-console.log(audioPath[0]);
-
-
 
 let kitSelect = document.getElementById('kitsel');
 kitSelect.addEventListener('change', changeDrumKit);
@@ -48,23 +45,28 @@ function changeDrumKit(e) {
     } else {
         opt = e.target.selectedOptions[0].value;
     }
-
     audiokit = audioPath[opt];
 }
 
 btns.forEach(btn => {
-    btn.addEventListener('click', ()=>{
-        keySound = btn.dataset.sound;
-        audiokit[keySound].currentTime = 0;
-        audiokit[keySound].play();
+    btn.addEventListener('click', function(){
+        playReact(btn);
     });
 });
 
 window.addEventListener('keydown', function(e) {
-    let button = this.document.querySelector(`button[data-key="${e.key}"]`)
-    if(!button) return; //stop fnction from running
-    console.log(button);
-    keySound = button.dataset.sound;
+    let btn = this.document.querySelector(`button[data-key="${e.key}"]`);
+    if(!btn) return; //stop fnction from running
+    playReact(btn);
+});
+
+function playReact(btn) {
+    keySound = btn.dataset.sound;
     audiokit[keySound].currentTime = 0;
     audiokit[keySound].play();
-});
+    btn.classList.add('active');
+    setTimeout(() => {
+        btn.classList.remove('active');
+    }, 100);
+}
+
