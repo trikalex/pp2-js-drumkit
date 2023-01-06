@@ -57,6 +57,14 @@ function changeDrumKit(e) {
     btnEl.addEventListener('click', ()=>{
         audioPath.play();
     });
+
+    // window.addEventListener('keydown', (event)=>{
+//     //     if (event.key === ) {
+//     //         audioEl.play();
+//     //         btnEl.style.transform ='scale(.9)';
+//     //         setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
+//     //     };
+//     // });
 }
 
 
