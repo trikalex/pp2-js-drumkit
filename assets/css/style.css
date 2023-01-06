@@ -41,7 +41,7 @@ h1 :hover {
 /* Drumkit select container */
 
 .kit {
-    background-image: url(/assets/images/drumkit.jpg);
+    background-image: url(../images/drumkit.jpg);
     background-position: bottom;
     /* background-size: cover; */
     /* background-color: #3e128696; */
@@ -84,7 +84,7 @@ h1 :hover {
 .frame {
     padding: 20px;
     border-radius: 5px;
-    background-image: url(/assets/images/drumkit.jpg);
+    background-image: url(../images/drumkit.jpg);
     background-position: center center;
     background-size: cover;
     display: flex;
