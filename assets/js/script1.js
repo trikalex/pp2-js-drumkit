@@ -42,7 +42,7 @@ function changeDrumKit(e) {
     let btnEl = document.querySelectorAll('.btn');
 
     if (opt.includes('kit1')) {
-        audioPath[0] = btnEl;
+        btnEl = audioPath[0];
     }
     else if (opt.includes('kit2')) {
         btnEl = audioPath[1];
@@ -58,13 +58,15 @@ function changeDrumKit(e) {
         audioPath.play();
     });
 
-    // window.addEventListener('keydown', (event)=>{
-//     //     if (event.key === ) {
-//     //         audioEl.play();
-//     //         btnEl.style.transform ='scale(.9)';
-//     //         setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
-//     //     };
-//     // });
+    // window.addEventListener('keydown', function(e) {
+    //     let audio = this.document.querySelector()
+
+        // if (event.key === ) {
+        //     audioEl.play();
+        //     btnEl.style.transform ='scale(.9)';
+        //     setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
+        // };
+    // });
 }
 
 
