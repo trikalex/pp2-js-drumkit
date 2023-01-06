@@ -1,108 +1,88 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Drumkit 
+## Play Drums Application
+- Drumkit is a simple, intuitive, easy to use drumming application, 
+that aims to facilitate the exercise of rithmic abilties for the music enthusiasts regrdless of their age! 
 
-Welcome Alexandru Ursu,
+## Features
+- The Drumkit has a minimalist design with a couple of features that makes it fun to use and explore different percussive sounds. 
+- Besides the minimalist and easy to use interface the colors and the font used for this application were chosen to suggest a playful and inspiring environment.
+- At the top the application title is placed with a hammer that represents the percusive nature of this application.
+- Below the title, the user can find a dropdown menu to select one of the four drum kits, and under this menu the drum pads are placed as the main interactive area. 
+- The drum pads have a suggestive background image of a drum kit. 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+### Build Features
+- The header element placed on top, representing the name of the application "Drumkit" is interactive in nature and will change color when hovered over. 
+- Immediately below the title a dropdown menu is placed for the user to change the drumkit sounds for all the drum pads / buttons.
+- The drum pads are placed under the kit select area over the main interactive section.  
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+- __Kit select__
+- The "kit select" menu features a total of four drum kits, each containing 5 sounds in total:
+  - kick, snare, perc (percussion), hihat and crash (cymbal).
+- This dropdown menu is interactive in nature and the text will change color when hovered over.
+- The sounds presented in each kit are different in style and offer an inspiring range of percussive elements of the same kind (kick, snare, perc, hihat & crash).
 
-## Gitpod Reminders
+- __Drum pads__
+- The last and most important interactive part is the drum pads/ buttons area where the user can interact with each assigned button in order to play the percussive elements.
+- Each button was designed to be reactive and will change the font color and the size when hovered over or when played, or clicked on.
+- Also each button features a different minimalist circle symbol that was selected per sound which is meant to represent that specific instrument.
+- This area has a inspiring and suggestive background that respresents a black and white photography of an acousitc drum kit. 
+- The photo background suggests the higher importance of this area as being the "playground" or the main interactive part.
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Followup Features
+- Should this application receive a positive feedback from the music enthusiasts, a few followup features would include:
+  - Integration of another 7 drum pads and the structuring of the drum pads as a full piano octave that presents 7 white keys and 5 black keys.
+    - this feature would facilitate then a further on matching of the plugin with the MIDI protocol and the ability to play each drum pad as from a midi keyboard.
+  - Addition of more than ten drum kits in order to have a rich variation of sounds
+  - An extra importrarnt feature that would allow the user to also change sounds per drum pad enabling combinations of sounds from all drum kits. This feature would ofcourse respect the drum pad/ button type allowing only a sellection of the same type of percussive instrument => kick - kick1, kick2, kick3 etc.
+  - Another extra feature would enable the user to save personal drum kit combinations, with the preffered souns sellected for each drum pad. 
 
-`python3 -m http.server`
+## Testing 
 
-A blue button should appear to click: _Make Public_,
+### Bugs & issues
 
-Another blue button should appear to click: _Open Browser_.
+### Extra testing
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+### Validator Tests
+- For the HTML file:
+- For the style.css file:
+- For script.js file:
 
-A blue button should appear to click: _Make Public_,
+### Unfixed Issues
 
-Another blue button should appear to click: _Open Browser_.
+## Deployment
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+The site was deployed to GitHub pages. The steps to deploy are as follows: 
+  - In the [GitHub repository](https://github.com/trikalex/pp2-js-drumkit), navigate to the Settings tab 
+  - From the source section drop-down menu, select the **Main** Branch, then click "Save".
+  - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
-To log into the Heroku toolbelt CLI:
+The live link can be found [here](https://trikalex.github.io/pp2-js-drumkit/)
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Local Deployment
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+You can clone the repository by following these steps:
 
-------
+1. Go to the [GitHub repository](https://github.com/trikalex/pp2-js-drumkit) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/trikalex/pp2-js-drumkit.git`
+7. Press Enter to create your local clone.
 
-## Release History
+Alternatively, if using Gitpod, you can click below to create your own workspace using this repository.
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/trikalex/pp2-js-drumkit)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+## Credits 
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+- ### Code
+- Most of the code used for creating this application was covered in the Java Script Essentials, Comparative Programming Languages Essentials and also Love Maths project.
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+- ### Content
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
-
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
-
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
-
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
-
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
-
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
-
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
-
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
-
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
-
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+- ### Media
+- The Background image for the drum pads area was taken from unsplash.com, a free stock photos website.
+- The icons used in the title and on the drum pads area are part of the free Fontawesome library. 
+- The sounds used for each of the drum kits are part of a personal sample library owned by the creator of this application.  

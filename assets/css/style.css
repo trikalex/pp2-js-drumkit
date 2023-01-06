@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+One&display=swap');
 
+/* Body styling */
+
 body {
     background-color: #3c1083;
     font-family: 'Mochiy Pop One', sans-serif;
@@ -11,12 +13,16 @@ body {
     justify-content: center;
 }
 
+/* Application title */
+
 .title {
     display: flex;
     flex-direction: column;
     line-height: 75px;
     text-align: upper-center;
 }
+
+/* Title styling */
 
 h1 {
     font-size: 50px;
@@ -32,6 +38,8 @@ h1 :hover {
     transition: all 0.3s ease-in-out;
 }
 
+/* Drumkit select container */
+
 .kit {
     background-color: #3f1286ea;
     border-color:rgba(27, 9, 129, 0.733);
@@ -46,6 +54,8 @@ h1 :hover {
     color: rgb(178, 252, 41);
     transition: all 0.3s ease-in-out;
 }
+
+/* Kit sellect button */
 
 #kitsel {
     padding: 15px 2px;
@@ -66,6 +76,8 @@ h1 :hover {
     transition: all 0.2s ease-in-out;
 }
 
+/* Background image for the buttons/ drum pads area */
+
 .frame {
     padding: 20px;
     border-radius: 5px;
@@ -83,9 +95,13 @@ h1 :hover {
     box-shadow: 2px 4px 8px rgba(13, 8, 43, 0.616);
 }
 
+/* Button container */
+
 .drums {
     text-align: center;
 }
+
+/* Buttons - drum pads */
 
 .btn {
     padding: 30px 50px;
@@ -100,7 +116,7 @@ h1 :hover {
     font-family:'Mochiy Pop One', sans-serif ;
     text-shadow: 1px 1px 2px rgba(13, 8, 43, 0.616);
     cursor: pointer;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
 }
 
 .btn:hover {

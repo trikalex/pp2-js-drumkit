@@ -42,7 +42,7 @@ function changeDrumKit(e) {
     let btnEl = document.querySelectorAll('.btn');
 
     if (opt.includes('kit1')) {
-        btnEl = audioPath[0];
+        audioPath[0] = btnEl;
     }
     else if (opt.includes('kit2')) {
         btnEl = audioPath[1];
@@ -57,7 +57,7 @@ function changeDrumKit(e) {
     btnEl.addEventListener('click', ()=>{
         audioPath.play();
     });
-};
+}
 
 
 // 
