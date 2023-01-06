@@ -120,18 +120,17 @@ h1:hover {
     font-family:'Mochiy Pop One', sans-serif ;
     text-shadow: 1px 1px 2px rgba(13, 8, 43, 0.616);
     cursor: pointer;
-    /* text-transform: capitalize; */
+    transition: all 0.3s ease-in-out;
 }
 
 .btn:hover {
     color: rgb(178, 252, 41);
     padding: 31px 51px;
-    transition: all 0.3s ease-in-out;
 }
-.btn:active {
+.btn.active {
+    color: rgb(178, 252, 41);
     font-size: 17px;
     padding: 35px 55px;
-    transition: all 0.2s ease-in-out;
 }
 
 /* Responsive design styling */
