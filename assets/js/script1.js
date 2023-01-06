@@ -69,4 +69,3 @@ function playReact(btn) {
         btn.classList.remove('active');
     }, 100);
 }
-
