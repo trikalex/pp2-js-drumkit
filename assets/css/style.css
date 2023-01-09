@@ -44,8 +44,6 @@ h1:hover {
     padding: 1em 3em;
     background-image: url(../images/drumkit.jpg);
     background-position: bottom;
-    /* background-size: cover; */
-    /* background-color: #3e128696; */
     border-color:rgba(27, 9, 129, 0.733);
     border-radius: 10px;
     margin: 10px;
@@ -91,7 +89,7 @@ h1:hover {
     display: flex;
     flex-direction: column;
     width: 65%;
-    height: 500px;
+    height: 40em;
     justify-content: center;
     border-color:rgba(224, 138, 25, 0.986);
     border-radius: 10px;
@@ -131,6 +129,80 @@ h1:hover {
     color: rgb(178, 252, 41);
     font-size: 17px;
     padding: 35px 55px;
+}
+
+/* Modal tips */
+
+*, *::after, ::before {
+    box-sizing: border-box;
+}
+
+.modal {
+    position: top;
+    margin-top: 2px;
+    /* /* left: 50%; */
+    transition: 100ms ease-in-out;
+    transform: scale(0);
+    border: 1px solid;
+    border-color:rgba(27, 9, 129, 0.733);
+    border-radius: 10px;
+    background-color: #be7f0acb;
+    color: #250d68;
+    z-index: 10;
+    max-width: 90%;   
+}
+
+.modal.active {
+    transform: scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #250d68;
+}
+
+.modal-header .modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-modal {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px;
+}
+
+#overlay {
+    position: fixed;
+    /* opacity: 0; */
+    transition: 100ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    pointer-events: none;
+}
+
+#overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+
+#modal-btn {
+    padding: 5px;
+    margin-top: 10px;
 }
 
 /* Responsive design styling */
