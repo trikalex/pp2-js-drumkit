@@ -246,6 +246,24 @@ h1:hover {
     font-size: 10px;
 }
 
+.socials {
+    color: #e9a932f1;
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 30px;
+    padding-left: 1.5em;
+    align-items: center;
+    margin: 0;
+}
+
+.socials i {
+    font-size: 100%;
+    margin: 1%;
+    padding: 5%;
+    color: #e9a932f1;
+}
+
 /* Responsive design styling */
 
 @media (max-width: 563px) {
