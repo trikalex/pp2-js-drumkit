@@ -1,51 +1,101 @@
-let kits = ['kick', 'snare', 'perc', 'hihat', 'crash'];
+/* jshint esversion: 11 */
 
-// let drumsEl = document.querySelector('.drums');
-let btnEl = document.getElementsByClassName('btn');
+// Defining the audio path for each drum kit
+let audioPath =[
+    {
+        'kick': new Audio('assets/audio/kit1/kick1.wav'),
+        'snare': new Audio('assets/audio/kit1/snare1.wav'),
+        'perc': new Audio('assets/audio/kit1/perc1.wav'),
+        'hihat': new Audio('assets/audio/kit1/hihat1.wav'),
+        'crash': new Audio('assets/audio/kit1/crash1.wav'),
+    },
+    {
+        'kick': new Audio('assets/audio/kit2/kick2.wav'),
+        'snare': new Audio('assets/audio/kit2/snare2.wav'),
+        'perc': new Audio('assets/audio/kit2/perc2.wav'),
+        'hihat': new Audio('assets/audio/kit2/hihat2.wav'),
+        'crash': new Audio('assets/audio/kit2/crash2.wav'),
+    },
+    {
+        'kick': new Audio('assets/audio/kit3/kick3.wav'),
+        'snare': new Audio('assets/audio/kit3/snare3.wav'),
+        'perc': new Audio('assets/audio/kit3/perc3.wav'),
+        'hihat': new Audio('assets/audio/kit3/hihat3.wav'),
+        'crash': new Audio('assets/audio/kit3/crash3.wav'),
+    },
+    {
+        'kick': new Audio('assets/audio/kit4/kick4.wav'),
+        'snare': new Audio('assets/audio/kit4/snare4.wav'),
+        'perc': new Audio('assets/audio/kit4/perc4.wav'),
+        'hihat': new Audio('assets/audio/kit4/hihat4.wav'),
+        'crash': new Audio('assets/audio/kit4/crash4.wav'),
+    },
+];
 
+// Creating variable to select the drum kit and load the selected one from the menu
+let kitSelect = document.getElementById('kitsel');
+kitSelect.addEventListener('change', changeDrumKit);
+window.addEventListener('load', changeDrumKit);
 
-let kitSelect = document.querySelectorAll('select[id="kitsel"]');
-kitSelect.forEach(select => {
-    select.addEventListener('change', changeDrumKit);
-});
+let opt, keySound;
+let audiokit = audioPath[0];
+let btns = document.querySelectorAll('.btn');
 
 function changeDrumKit(e) {
-    // let audioEl = document.createElement('audio');
-    let opt = e.target.selectedOptions[0].value;
-    console.log(opt);
-    if (opt.includes('kit1')) {
-        audioEl.src = 'assets/audio/kit1/' + kits + '1.wav';
+    if (e.target.nodeName != "SELECT") {
+        opt = kitSelect.value;
+    } else {
+        opt = e.target.selectedOptions[0].value;
     }
-    else if (opt.includes('kit2')) {
-        audioEl.src = 'assets/audio/kit2/' + kits + '2.wav';
-    }
-    else if (opt.includes('kit3')) {
-        audioEl.src = 'assets/audio/kit3/' + kits + '3.wav';
-    }
-    else if (opt.includes('kit4')) {
-        audioEl.src = 'assets/audio/kit4/' + kits + '4.wav';
-    }
+    audiokit = audioPath[opt];
+}
 
-    btnEl.addEventListener('click', ()=>{
-        audioEl.play();
+// Getting the drum pads/ buttons reactive to mouse clicks
+btns.forEach(btn => {
+    btn.addEventListener('click', function(){
+        playReact(btn);
     });
+});
 
+// Getting the drum pads/ buttons reactive to the keyboard keys
+window.addEventListener('keydown', function(e) {
+    let btn = this.document.querySelector(`button[data-key="${e.key}"]`);
+    if(!btn) return; //stop fnction from running
+    playReact(btn);
+});
 
+function playReact(btn) {
+    keySound = btn.dataset.sound;
+    audiokit[keySound].currentTime = 0;
+    audiokit[keySound].play();
+    btn.classList.add('active');
+    setTimeout(() => {
+        btn.classList.remove('active');
+    }, 100);
+}
 
-//     // window.addEventListener('keydown', (event)=>{
-//     //     if (event.key === ) {
-//     //         audioEl.play();
-//     //         btnEl.style.transform ='scale(.9)';
-//     //         setTimeout(()=>{btnEl.style.transform = 'scale(1)';},);
-//     //     };
-//     // });
+// Modal for user guidance!
 
-};
+// Defining the variables
+let modalContainer = document.getElementById('modal');
+let openModalButtons = document.getElementById('modal-btn');
+let closeModalButtons = document.getElementById('close');
+let overlay = document.getElementById('overlay');
 
-function addAudioToButtons() {
-    document.getElementsByClassName('btn').appendChild(audioEl);
-    
-};
+// Function to activate the Modal and the overlay
+openModalButtons.addEventListener('click', () => {
+    modalContainer.classList.add('active');
+    overlay.classList.add('active');
+});
 
-console.log(btnEl);
-// console.log(audioEl);
+// Function to remove the Modal and  the overlay
+closeModalButtons.addEventListener('click', () => {
+    modalContainer.classList.remove('active');
+    overlay.classList.remove('active');
+});
+
+// Click anywhere on the overlay to close the Modal
+overlay.addEventListener('click', () => {
+    modalContainer.classList.remove('active');
+    overlay.classList.remove('active');
+});
