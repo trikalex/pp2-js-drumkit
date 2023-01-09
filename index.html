@@ -21,6 +21,21 @@
 
 <body>
 
+    <!-- Modals -->
+    <div class="modal active" id="modal1">
+        <div class="modal-header">
+            <div class="modal-title">Explanation</div>
+            <button data-close-modal class="close-modal">&times;</button>
+        </div>
+        <div class="modal-body">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ratione delectus, nisi quos facilis molestias
+            quis odit voluptatibus expedita ea, impedit alias voluptas asperiores obcaecati. Consequuntur dolorem
+            asperiores voluptatum a.
+        </div>
+    </div>
+    <button data-modal-target="#modal1" id="modal-btn"> modal</button>
+    <div id="overlay"></div>
+
     <!-- Application Title -->
     <header class="title">
         <h1>Drumkit <i id="hammer" class="fa-solid fa-hammer"></i></h1>
@@ -50,36 +65,49 @@
             <button class="btn" data-key="5" data-sound="kick">
                 <i class="fa-solid fa-circle"></i>
                 <br>
-                kick
+                Kick
+                <br>
+                (num 5)
             </button>
             <button class="btn" data-key="6" data-sound="snare">
                 <i class="fa-regular fa-circle"></i>
                 <br>
-                snare
+                Snare
+                <br>
+                (num 6)
             </button>
             <button class="btn" data-key="7" data-sound="perc">
                 <i class="fa-solid fa-circle-half-stroke"></i>
                 <br>
-                perc
+                Perc
+                <br>
+                (num 7)
             </button>
             <button class="btn" data-key="9" data-sound="hihat">
                 <i class="fa-regular fa-circle-dot"></i>
                 <br>
-                hihat
+                Hihat
+                <br>
+                (num 9)
             </button>
             <button class="btn" data-key="0" data-sound="crash">
                 <i class="fa-solid fa-circle-dot"></i>
                 <br>
-                crash
+                Crash
+                <br>
+                (num 0)
             </button>
 
         </div>
 
     </div>
 
+    <footer>
+
+    </footer>
 
     <!-- JavaScript link -->
-    <script src="assets/js/script1.js"></script>
+    <script src="assets/js/script.js"></script>
 
     <!-- font awesome -->
     <script src="https://kit.fontawesome.com/05fc023ef5.js" crossorigin="anonymous"></script>
