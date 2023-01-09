@@ -22,18 +22,43 @@
 <body>
 
     <!-- Modals -->
-    <div class="modal active" id="modal1">
+    <div class="modal" id="modal">
         <div class="modal-header">
-            <div class="modal-title">Explanation</div>
-            <button data-close-modal class="close-modal">&times;</button>
+            <div class="modal-title">Welcome to Drumkit!</div>
+            <button class="close-modal" id="close">&times;</button>
         </div>
         <div class="modal-body">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad ratione delectus, nisi quos facilis molestias
-            quis odit voluptatibus expedita ea, impedit alias voluptas asperiores obcaecati. Consequuntur dolorem
-            asperiores voluptatum a.
+            <p>
+                Please find below the digital drum machine that allows you to exercise your finger drumming skills while
+                having fun with the different percussion instruments and drum kits!
+            </p>
+            <br>
+            <p>
+                Under the 'kit select' menu you'll find 4 different drum kits each having different sounds and styles
+                assigned to the 5 percussion instruments.
+            </p>
+            <br>
+            <p>
+                Below the menu, where the dum pads are, that's where play area is and where the fun begins!
+                <br>
+                You can play the drums by tapping the pads, by using your mouse to click them, or by using the assigned
+                numeric keys for each drum pad.
+                <br>
+                Under each instrument name you'll find the corresponding numeric key for every pad. Try tapping those
+                keys and see what happens!
+                <br>
+                These keys were assigned in an ergonomic manner in order to facilitate any beat performace
+                that you might be inspired to play!
+            </p>
+            <br>
+            <p>
+                Please enjoy finger drumming and before anything Have Fun! :)
+            </p>
+
+
         </div>
     </div>
-    <button data-modal-target="#modal1" id="modal-btn"> modal</button>
+    <button data-modal-target="#modal" id="modal-btn"> <i class="fa-solid fa-circle-question"></i></button>
     <div id="overlay"></div>
 
     <!-- Application Title -->
@@ -67,42 +92,51 @@
                 <br>
                 Kick
                 <br>
-                (num 5)
+                (5)
             </button>
             <button class="btn" data-key="6" data-sound="snare">
                 <i class="fa-regular fa-circle"></i>
                 <br>
                 Snare
                 <br>
-                (num 6)
+                (6)
             </button>
             <button class="btn" data-key="7" data-sound="perc">
                 <i class="fa-solid fa-circle-half-stroke"></i>
                 <br>
                 Perc
                 <br>
-                (num 7)
+                (7)
             </button>
             <button class="btn" data-key="9" data-sound="hihat">
                 <i class="fa-regular fa-circle-dot"></i>
                 <br>
                 Hihat
                 <br>
-                (num 9)
+                (9)
             </button>
             <button class="btn" data-key="0" data-sound="crash">
                 <i class="fa-solid fa-circle-dot"></i>
                 <br>
                 Crash
                 <br>
-                (num 0)
+                (0)
             </button>
 
         </div>
 
     </div>
 
-    <footer>
+    <footer class="footer">
+        <h3>
+            Credits
+        </h3>
+        <p>
+            The above instrument was created with sound samples owned by the author
+        </p>
+        <p>
+            Copyright <i class="fa-regular fa-copyright"></i> Alexandru Bodochi Ursu
+        </p>
 
     </footer>
 
