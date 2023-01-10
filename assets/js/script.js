@@ -1,8 +1,7 @@
 /* jshint esversion: 11 */
 
 // Defining the audio path for each drum kit
-let audioPath =[
-    {
+let audioPath = [{
         'kick': new Audio('assets/audio/kit1/kick1.wav'),
         'snare': new Audio('assets/audio/kit1/snare1.wav'),
         'perc': new Audio('assets/audio/kit1/perc1.wav'),
@@ -52,15 +51,15 @@ function changeDrumKit(e) {
 
 // Getting the drum pads/ buttons reactive to mouse clicks
 btns.forEach(btn => {
-    btn.addEventListener('click', function(){
+    btn.addEventListener('click', function () {
         playReact(btn);
     });
 });
 
 // Getting the drum pads/ buttons reactive to the keyboard keys
-window.addEventListener('keydown', function(e) {
+window.addEventListener('keydown', function (e) {
     let btn = this.document.querySelector(`button[data-key="${e.key}"]`);
-    if(!btn) return; //stop fnction from running
+    if (!btn) return; //stop fnction from running
     playReact(btn);
 });
 

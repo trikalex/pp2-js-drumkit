@@ -1,7 +1,7 @@
 # Drumkit 
 ## Play Drums Application
 - Drumkit is a simple, intuitive, easy to use drumming application, 
-that aims to facilitate the exercise of rithmic abilties for the music enthusiasts regrdless of their age! 
+that aims to facilitate the exercise of rithmic abilties for the music enthusiasts regrdless of their musical knowledge and drumming skills!
 
 ![Drumkit](assets/documentation/scaling/1440px%20drumkit.png)
 
