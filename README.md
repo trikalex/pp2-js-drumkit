@@ -74,6 +74,9 @@ that aims to facilitate the exercise of rithmic abilties for the music enthusias
 - This issue is directly related to the mobile environment and there's not much that can be done about it unless this aplication would be deployed as a stand alone app and not browser based. 
 
 ### Extra testing
+- Extra testing was performed for the overall score of the website with the use of Lighthouse from inside the inspector tools in Google Chrome.
+- The results are displayed below:
+- ![Lighthouse](assets/documentation/validator/lighthouse.png)
 
 ### Validator Tests
 - For the HTML file:
@@ -92,6 +95,7 @@ that aims to facilitate the exercise of rithmic abilties for the music enthusias
   - ![script.js](assets/documentation/validator/js-valid.png)
 
 ### Unfixed Issues
+- No unfixed issues were left.
 
 ## Deployment
 
@@ -123,10 +127,13 @@ Alternatively, if using Gitpod, you can click below to create your own workspace
 
 - ### Code
 - Most of the code used for creating this application was covered in the Java Script Essentials, Comparative Programming Languages Essentials and also Love Maths project.
+- However as a source of inspiration for the drum pads/ buttons and the modal function two YouTube sources were used in the process:
+  - 1. The [JavaScript King](https://www.youtube.com/@JavaScriptKing) channel
+  - 2. The [Web Dev Simplified](https://www.youtube.com/@WebDevSimplified) channel
 
 - ### Content
+- All sounds used for each of the drum kits are part of a personal sample library bought and owned by the creator of this application.
 
 - ### Media
 - The Background image for the drum pads area was taken from unsplash.com, a free stock photos website.
-- The icons used in the title and on the drum pads area are part of the free Fontawesome library. 
-- The sounds used for each of the drum kits are part of a personal sample library owned by the creator of this application.  
+- The icons used in the title and on the drum pads area are part of the free Fontawesome library.
