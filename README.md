@@ -57,8 +57,21 @@ that aims to facilitate the exercise of rithmic abilties for the music enthusias
   - Another extra feature would enable the user to save personal drum kit combinations, with the preffered souns sellected for each drum pad. 
 
 ## Testing 
+- The responsive web design was tested extensively with the inspector toll on Google Chrome and Microsoft Edge browsers.
+- Both the scaling and functionality are working perfectly well from 4K down to 1024px and as low as 375px.
+- Please find below screenshots from both browsers:
+  - ### Microsoft Edge
+  - ![edge_laptop1024](assets/documentation/scaling/edge1024px.png)
+  - ![edge_tablet768](assets/documentation/scaling/edge768px.png)
+  - ![edge_mobile425](assets/documentation/scaling/edge425px.png)
 
+  - ### Google Chrome
+  - ![chrome_laptop1024](assets/documentation/scaling/1024px%20drumkit.png)
+  - ![chrome_tablet768](assets/documentation/scaling/768px%20drumkit.png)
+  - ![chrome_mobile375](assets/documentation/scaling/375px%20drumkit.png)
 ### Bugs & issues
+- One issue that was detected is related to the mobile screen, more precise to the double and tripple tap action that will trigger the zoom in function on iPhones instead of playing the sound assigned to the played drum pad. 
+- This issue is directly related to the mobile environment and there's not much that can be done about it unless this aplication would be deployed as a stand alone app and not browser based. 
 
 ### Extra testing
 
