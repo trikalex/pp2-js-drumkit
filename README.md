@@ -3,30 +3,50 @@
 - Drumkit is a simple, intuitive, easy to use drumming application, 
 that aims to facilitate the exercise of rithmic abilties for the music enthusiasts regrdless of their age! 
 
+![Drumkit](assets/documentation/scaling/1440px%20drumkit.png)
+
 ## Features
 - The Drumkit has a minimalist design with a couple of features that makes it fun to use and explore different percussive sounds. 
 - Besides the minimalist and easy to use interface the colors and the font used for this application were chosen to suggest a playful and inspiring environment.
 - At the top the application title is placed with a hammer that represents the percusive nature of this application.
 - Below the title, the user can find a dropdown menu to select one of the four drum kits, and under this menu the drum pads are placed as the main interactive area. 
-- The drum pads have a suggestive background image of a drum kit. 
+- The drum pads have a suggestive background image of a drum kit.
 
 ### Build Features
+- Above the title element the instruction modal was placed under a reactive question mark that will reveal a short user guide once it's clicked on.  
 - The header element placed on top, representing the name of the application "Drumkit" is interactive in nature and will change color when hovered over. 
 - Immediately below the title a dropdown menu is placed for the user to change the drumkit sounds for all the drum pads / buttons.
 - The drum pads are placed under the kit select area over the main interactive section.  
+
+- __"?" The instruction modal__
+
+- ![Modal"?"](assets/documentation/sections/modal-hover.png)
+- Meant to awake the curiosity of the user, at the very top of the page, a stylish reactive question mark button is placed that will reveal a short user guide once it's clicked on.
+- The user guide is meant to quickly instruct the user about the interactive areas and how they are used. 
+- This was achieved with the use of modals in Java Script and it opens a scroll through window that will sit on top of the page until closed. 
+- The styling for this user guide also creates an overlay that shadows the rest of the web page as long as the modal is open.
+- In order to close the modal the user cal either click on the upper right corner of the instruction window where the 'x' symbol is placed or click anywhere over the background overlay.
+- ![Modal-instruction](assets/documentation/sections/modal.png)
 
 - __Kit select__
 - The "kit select" menu features a total of four drum kits, each containing 5 sounds in total:
   - kick, snare, perc (percussion), hihat and crash (cymbal).
 - This dropdown menu is interactive in nature and the text will change color when hovered over.
 - The sounds presented in each kit are different in style and offer an inspiring range of percussive elements of the same kind (kick, snare, perc, hihat & crash).
+- ![Kit-select](assets/documentation/sections/kit-select.png)
 
 - __Drum pads__
 - The last and most important interactive part is the drum pads/ buttons area where the user can interact with each assigned button in order to play the percussive elements.
-- Each button was designed to be reactive and will change the font color and the size when hovered over or when played, or clicked on.
+- Each button was designed to be reactive and will change the font color and the size when hovered over, when tapped, played by the assigned numeric key or when clicked on!
 - Also each button features a different minimalist circle symbol that was selected per sound which is meant to represent that specific instrument.
-- This area has a inspiring and suggestive background that respresents a black and white photography of an acousitc drum kit. 
-- The photo background suggests the higher importance of this area as being the "playground" or the main interactive part.
+- This area has a inspiring background that respresents a black and white photography of an acousitc drum kit. 
+- The photographic background suggests the higher importance of this area as being the "playground" or the main interactive part.
+- ![Drum-pads](assets/documentation/sections/drum-pads.png)
+
+-__Footer credits__
+- At the very bottom of the page a footer note is placed, meant to give credits to the author of this application and to guide the user towards the linkedin and Github pages of the author.
+- The links towards the social pages is done with the use of fontawesome icons that will react once hovered over and will pop the assigned link in a new tab once clicked on!
+- ![Credits](assets/documentation/sections/credits.png)
 
 ### Followup Features
 - Should this application receive a positive feedback from the music enthusiasts, a few followup features would include:
