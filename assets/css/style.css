@@ -266,6 +266,12 @@ h1:hover {
     color: #e9a932f1;
 }
 
+.socials i:hover {
+    color: rgb(178, 252, 41);
+    font-size: 15.5px;
+    transition: all 0.3s ease-in-out;
+}
+
 /* Responsive design styling */
 
 @media (max-width: 563px) {
