@@ -20,7 +20,6 @@ body {
     display: flex;
     flex-direction: column;
     line-height: 75px;
-    text-align: upper-center;
 }
 
 /* Title styling */
@@ -139,8 +138,7 @@ h1:hover {
 }
 
 .modal {
-    position: top;
-    margin-top: 2px;
+    margin: 2px;
     overflow: scroll;
     transition: 100ms ease-in-out;
     transform: scale(0);
@@ -162,7 +160,6 @@ h1:hover {
 .modal.active {
     transform: scale(1);
     height: 35em;
-    line-height: auto;
 }
 
 .modal-header {
