@@ -44,8 +44,19 @@ that aims to facilitate the exercise of rithmic abilties for the music enthusias
 
 ### Validator Tests
 - For the HTML file:
+  - No errors were returned through the official
+  - [W3C validator-index.html](https://validator.w3.org/nu/?doc=https%3A%2F%2Ftrikalex.github.io%2Fpp2-js-drumkit%2Findex.html)
+  - ![index.html](assets/documentation/validator/html-valid.png)
+
 - For the style.css file:
+  - No errors were returned through the official
+  - [(Jigsaw3) CSS-validator](https://jigsaw.w3.org/css-validator/validator?uri=https://trikalex.github.io/pp2-js-drumkit)
+  - ![style.css](assets/documentation/validator/css-valid1.png)
+
 - For script.js file:
+  - No errors were returned through the official
+  - [jshint.com](https://jshint.com/)
+  - ![script.js](assets/documentation/validator/js-valid.png)
 
 ### Unfixed Issues
 
